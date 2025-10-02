@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3aab70b5bc06174a87ccf26267e64da, type: 3}
+  m_Name: Loop1
+  m_EditorClassIdentifier: 
+  riverConfig: {fileID: 11400000, guid: d70750defa51d8843acd966f7716abf1, type: 2}
+  mountainConfig: {fileID: 11400000, guid: 3254b0339c3379e4ba5da64fe094e4a6, type: 2}
+  houseConfig: {fileID: 11400000, guid: 85ad9f6b14aa7e74fa522c1c54810650, type: 2}
+  boatConfig: {fileID: 11400000, guid: 768a485d06e1769459f346d85f750ad6, type: 2}
+  storyHint: 
