@@ -1274,6 +1274,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 171092623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &990507023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990507025}
+  - component: {fileID: 990507024}
+  m_Layer: 0
+  m_Name: BoatSelectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &990507024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990507023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711e7057002032d418577a80e826183f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenBoatUI: {fileID: 660918711}
+  normalBoatUI: {fileID: 1312579362}
+--- !u!4 &990507025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990507023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.765622, y: -1.2470288, z: -0.016027538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1012507486
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,52 +2538,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1575623448
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1575623450}
-  - component: {fileID: 1575623449}
-  m_Layer: 0
-  m_Name: BoatSelectManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1575623449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575623448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 711e7057002032d418577a80e826183f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  brokenBoatUI: {fileID: 6366378770690955273, guid: 7b15aa96208995b4494c663618944ab9, type: 3}
-  normalBoatUI: {fileID: 558746527826410332, guid: ede59aacb0e0dbd4e858321f16c0d718, type: 3}
---- !u!4 &1575623450
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575623448}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.813686, y: -3.0454302, z: 0.005696363}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581865462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,6 +3747,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2454899830772258104, guid: 7b15aa96208995b4494c663618944ab9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4384817263249810682, guid: 7b15aa96208995b4494c663618944ab9, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.954
@@ -3826,7 +3830,7 @@ SceneRoots:
   - {fileID: 1581865463}
   - {fileID: 1899308351}
   - {fileID: 7009253235745977565}
-  - {fileID: 1575623450}
   - {fileID: 44787916}
   - {fileID: 7554516088090278209}
   - {fileID: 1477528731}
+  - {fileID: 990507025}

@@ -8,7 +8,8 @@ public class BoatSelectManager : MonoBehaviour
 
     void Start()
     {
-        bool isBroken = LoopManager.Instance.CurrentLoopData.boatConfig.isBroken;
+        //riverConfig를 사용
+        bool isBroken = LoopManager.Instance.CurrentLoopData.riverConfig.isBoatBroken;
 
         brokenBoatUI.SetActive(isBroken);
         normalBoatUI.SetActive(!isBroken);
@@ -25,7 +26,8 @@ public class BoatSelectManager : MonoBehaviour
 
     public void OnSelectBoat()
     {
-        if (!LoopManager.Instance.CurrentLoopData.boatConfig.isBroken)
+        //riverConfig를 사용
+        if (!LoopManager.Instance.CurrentLoopData.riverConfig.isBoatBroken)
         {
             Debug.Log("보트 선택 → 다음 씬으로 이동!");
             SceneManager.LoadScene("River"); // 여기서 "River"는 실제 BoatRide 씬 이름
