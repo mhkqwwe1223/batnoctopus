@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 93355036}
   m_Layer: 0
   m_Name: doormiddleroom
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.09, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.55, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1987624268}
@@ -202,7 +202,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5209303, y: 0.9841316}
+  m_Offset: {x: 0.7896287, y: 0.9841316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -213,7 +213,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6998634, y: 3.997128}
+  m_Size: {x: 4.1624665, y: 3.997128}
   m_EdgeRadius: 0
 --- !u!1 &108305858
 GameObject:
@@ -945,7 +945,7 @@ GameObject:
   - component: {fileID: 909187848}
   m_Layer: 0
   m_Name: doorleftroom
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1075,6 +1075,70 @@ Transform:
   - {fileID: 2108318735}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1093199245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5337724611779692983, guid: 1ba0768d9b668f54a94bcfb4d6c16ac7, type: 3}
+  m_PrefabInstance: {fileID: 5201868697463237085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093199246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093199245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3025ca236a5b45345974ac4793de5106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exclamationMarkPrefab: {fileID: 4638503533623051104, guid: 8cc94da11ff956c4dbd942b683176f34, type: 3}
+  indicatorOffset: {x: 0.5, y: 1.5}
+--- !u!61 &1093199252
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093199245}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 10.24}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.24, y: 10.24}
+  m_EdgeRadius: 0
 --- !u!1 &1139528587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,7 +1306,7 @@ GameObject:
   - component: {fileID: 1144316427}
   m_Layer: 0
   m_Name: useworkbench
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1333,7 +1397,7 @@ GameObject:
   - component: {fileID: 1191159270}
   m_Layer: 0
   m_Name: doormiddleroom2
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1510,7 +1574,7 @@ GameObject:
   - component: {fileID: 1347927633}
   m_Layer: 0
   m_Name: doorrightroom
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2265,7 +2329,7 @@ GameObject:
   - component: {fileID: 1832774758}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3040,6 +3104,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 534102980181652650, guid: 1ba0768d9b668f54a94bcfb4d6c16ac7, type: 3}
+      propertyPath: m_Mass
+      value: 9.291999
+      objectReference: {fileID: 0}
     - target: {fileID: 5337724611779692983, guid: 1ba0768d9b668f54a94bcfb4d6c16ac7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3091,7 +3159,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5337724611779692983, guid: 1ba0768d9b668f54a94bcfb4d6c16ac7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093199246}
+    - targetCorrespondingSourceObject: {fileID: 5337724611779692983, guid: 1ba0768d9b668f54a94bcfb4d6c16ac7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093199252}
   m_SourcePrefab: {fileID: 100100000, guid: 1ba0768d9b668f54a94bcfb4d6c16ac7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
