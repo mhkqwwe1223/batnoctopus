@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fa32b44c2548d4992753a0dc087fea, type: 3}
   m_Name: New River Config
   m_EditorClassIdentifier: 
-  isBridgeBroken: 0
+  isBoatBroken: 0
   fishPrefab: {fileID: 0}
   fishSpawnPosition: {x: 0, y: 0}
   riverHint: 

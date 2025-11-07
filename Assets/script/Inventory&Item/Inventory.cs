@@ -21,8 +21,20 @@ public class Inventory : MonoBehaviour
 
     void Awake()
     {
-        FreshSlot();
-        UpdateSelection(); // 초기 선택 상태 설정
+        // GameState에 저장된 아이템 목록을 현재 인벤토리 목록에 추가합니다.
+        if (GameState.Instance != null)
+        {
+            foreach (var item in GameState.Instance.inventoryItems)
+            {
+                if (!items.Contains(item)) // 중복 추가 방지
+                {
+                    items.Add(item);
+                }
+            }
+        }
+
+        FreshSlot();       // UI 슬롯을 새로고침하여 아이템을 표시합니다.
+        UpdateSelection(); // 초기 선택 상태를 설정합니다.
     }
 
     public void FreshSlot()

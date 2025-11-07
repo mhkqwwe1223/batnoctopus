@@ -53,6 +53,12 @@ public class LoopManager : MonoBehaviour
         loopCount++;
         if (loopCount >= loopDatas.Length) loopCount = 0;
 
+        // 다음 루프의 보트 상태를 GameState에 올바르게 적용합니다.
+        if (GameState.Instance != null)
+        {
+            GameState.Instance.boatBroken = CurrentLoopData.riverConfig.isBoatBroken;
+        }
+
         SceneManager.LoadScene("MainLoopScene"); // 다음 루프는 보트 선택씬부터 시작
     }
 }
