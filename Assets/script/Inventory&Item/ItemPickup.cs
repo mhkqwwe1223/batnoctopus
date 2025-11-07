@@ -20,18 +20,6 @@ public class ItemPickup : MonoBehaviour
             gameObject.SetActive(false);
             return;
         }
-
-        // World Space에서 마크 생성
-        if (interactionMarkerPrefab != null)
-        {
-            markerInstance = Instantiate(interactionMarkerPrefab, transform.position, Quaternion.identity);
-            var marker = markerInstance.GetComponent<InteractionMarker>();
-            if (marker != null)
-            {
-                marker.SetTarget(transform);
-            }
-            markerInstance.SetActive(false);
-        }
     }
 
     void Update()
